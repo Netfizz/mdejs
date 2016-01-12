@@ -1257,62 +1257,6 @@
                            doClick(buttons[i]);
                        }
                     });
-
-
-                    //switch (keyCodeStr) {
-                    //    case "b":
-                    //        doClick(buttons.bold);
-                    //        break;
-                    //    case "i":
-                    //        doClick(buttons.italic);
-                    //        break;
-                    //    case "l":
-                    //        doClick(buttons.link);
-                    //        break;
-                    //    case "q":
-                    //        doClick(buttons.quote);
-                    //        break;
-                    //    case "k":
-                    //        doClick(buttons.code);
-                    //        break;
-                    //    case "g":
-                    //        doClick(buttons.image);
-                    //        break;
-                    //    case "o":
-                    //        doClick(buttons.olist);
-                    //        break;
-                    //    case "u":
-                    //        doClick(buttons.ulist);
-                    //        break;
-                    //    case "h":
-                    //        doClick(buttons.heading);
-                    //        break;
-                    //    case "r":
-                    //        doClick(buttons.hr);
-                    //        break;
-                    //    case "y":
-                    //        doClick(buttons.redo);
-                    //        break;
-                    //    case "z":
-                    //        if (key.shiftKey) {
-                    //            doClick(buttons.redo);
-                    //        }
-                    //        else {
-                    //            doClick(buttons.undo);
-                    //        }
-                    //        break;
-                    //    default:
-                    //        return;
-                    //}
-
-
-                    if (key.preventDefault) {
-                        key.preventDefault();
-                    }
-
-                    if (window.event) {
-                        window.event.returnValue = false;
-                    }
                 }
             });
 
