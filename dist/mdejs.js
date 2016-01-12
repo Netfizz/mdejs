@@ -1,4 +1,4 @@
-;/*! mdejs 23-11-2015 */
+;/*! mdejs 12-01-2016 */
 (function ( $ ) {
     $.fn.mdejs = function(options) {
         var re = window.RegExp,
@@ -139,39 +139,39 @@
             ],
 
             lang: {
-                bold: "Жирный",
-                boldexample: "Текст, выделенный жирным",
+                bold: "Bold",
+                boldexample: "Bold Text",
 
-                italic: "Курсив",
-                italicexample: "Текст, выделенный жирным",
+                italic: "Italic",
+                italicexample: "Italic Text",
 
-                link: "Ссылка",
-                linkdescription: "Описание ссылки",
-                linkdialog: "<p><b>Вставить ссылку</b></p><p>http://yandex.ru/ \"Опциональная подсказка\"</p>",
+                link: "Link",
+                linkdescription: "Insert A Link",
+                linkdialog: "<p><b>Insert A Link</b></p><p>http://www.jqueryscript.net/ \"Link Title\"</p>",
 
-                quote: "Цитата",
-                quoteexample: "Текст цитаты",
+                quote: "Quote",
+                quoteexample: "Quote Text",
 
-                code: "Пример кода",
-                codeexample: "Введите текст исходного кода",
+                code: "Code",
+                codeexample: "Source Code",
 
-                image: "Изображение",
-                imagedescription: "Введите описание изображения",
-                imagedialog: "<p><b>Вставка изображения</b></p><p>http://example.com/images/diagram.jpg \"Опцианальная подсказка\"<br><br>Нужен <a href='http://www.google.com/search?q=бесплатный+хостинг+картинок' target='_blank'>бесплатный хостинг картинок?</a></p>",
+                image: "Image",
+                imagedescription: "Insert An Image",
+                imagedialog: "<p><b>Insert An Image</b></p><p>http://example.com/images/diagram.jpg \"Image Description\"</p>",
 
-                olist: "Нумерованный список",
-                ulist: "Маркированный список",
-                litem: "Элемент списка",
+                olist: "Ordered List",
+                ulist: "Unordered List",
+                litem: "List Item",
 
-                heading: "Заголовок h1/h2",
-                headingexample: "Заголовок",
+                heading: "Heading h1/h2",
+                headingexample: "Heading",
 
-                hr: "Горизонтальная черта",
+                hr: "Horizontal Line",
 
-                undo: "Отменить — " + (ua.isWin ? 'Ctrl+Z' : '⌘Z'),
-                redo: "Повторить — " + (ua.isWin ? 'Ctrl+Y' : '⇧⌘Z'),
+                undo: "Undo",
+                redo: "Redo",
 
-                help: "Помощь"
+                help: "Help"
             }
         };
 
@@ -1258,62 +1258,6 @@
                            doClick(buttons[i]);
                        }
                     });
-
-
-                    //switch (keyCodeStr) {
-                    //    case "b":
-                    //        doClick(buttons.bold);
-                    //        break;
-                    //    case "i":
-                    //        doClick(buttons.italic);
-                    //        break;
-                    //    case "l":
-                    //        doClick(buttons.link);
-                    //        break;
-                    //    case "q":
-                    //        doClick(buttons.quote);
-                    //        break;
-                    //    case "k":
-                    //        doClick(buttons.code);
-                    //        break;
-                    //    case "g":
-                    //        doClick(buttons.image);
-                    //        break;
-                    //    case "o":
-                    //        doClick(buttons.olist);
-                    //        break;
-                    //    case "u":
-                    //        doClick(buttons.ulist);
-                    //        break;
-                    //    case "h":
-                    //        doClick(buttons.heading);
-                    //        break;
-                    //    case "r":
-                    //        doClick(buttons.hr);
-                    //        break;
-                    //    case "y":
-                    //        doClick(buttons.redo);
-                    //        break;
-                    //    case "z":
-                    //        if (key.shiftKey) {
-                    //            doClick(buttons.redo);
-                    //        }
-                    //        else {
-                    //            doClick(buttons.undo);
-                    //        }
-                    //        break;
-                    //    default:
-                    //        return;
-                    //}
-
-
-                    if (key.preventDefault) {
-                        key.preventDefault();
-                    }
-
-                    if (window.event) {
-                        window.event.returnValue = false;
-                    }
                 }
             });
 
