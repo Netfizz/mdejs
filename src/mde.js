@@ -307,11 +307,7 @@
 
         function PanelCollection(element, options) {
             this.input = element[0];
-            console.log(options);
             this.preview = document.getElementsByClassName(options.preview_class)[0];
-
-            console.log(options);
-
             this.buttonBar = document.createElement("div");
             this.buttonBar.className = "mde-toolbar";
             this.input.parentNode.insertBefore(this.buttonBar, this.input);
@@ -1209,11 +1205,6 @@
                         window.scrollBy(0, fullTop - emptyTop);
                     }, 0);
                 } else {
-
-                    console.log("fullTop");
-                    console.log(fullTop);
-                    console.log("eTop");
-                    console.log(emptyTop);
                     window.scrollBy(0, fullTop - emptyTop);
                 }
             };
